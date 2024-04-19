@@ -1,0 +1,9 @@
+pract2:- objective -- To glow a bulb sensing the light intensity falling on the light sensitive resistor which is also known as the light dependent resistor.
+
+Component required 
+Name   Quantity    Component
+U1             1          Arduino Uno R3
+L1             1           light bulb
+r1             1           1k ohm resistor 
+r2             1          10k ohm resistor 
+r3             1             photoresistor

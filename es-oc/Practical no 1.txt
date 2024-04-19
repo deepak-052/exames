@@ -1,0 +1,11 @@
+Overview of arduino and its capabilities 
+The arduino is a development board for the ATMEGA micro computer.
+There are other useful feature like Input\output pin a USB port communication between the arduino 
+and a computer and a 9v DC power connector
+one of the reason Arduino is so popular is that it is super easy to write Arduino code. Most 
+microcontrollers are porgrammable with the C language or assembly codes which is difficult language users C/C++ which is much easier to learn and use.
+ 
+The Arduino is a versatile electronic development platform so you can connect a huge variety of input 
+and output device to it Breadboarding basics for the connecting components.
+ The rows of a solderless breadboard are connected inside allowing you to connect components by plugging them into the same row as each other.
+ The special long rails alnong the edges are for easy access to powder the ground.

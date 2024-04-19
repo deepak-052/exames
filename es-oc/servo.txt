@@ -1,0 +1,7 @@
+pract9:- Objective-- To make student understand the procedure to interface a servo on to with an arduino.
+it will help students to explore various robot related automation projects 
+
+Components required
+Name    Qunatity   Component
+U1              1           Arduino UNO R3 
+SERVO       1           Positional Micro Servo

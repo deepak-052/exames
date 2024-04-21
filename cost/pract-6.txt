@@ -1,0 +1,4 @@
+Pract6 :- SKewness
+> library(e1071) # load e1071
+> duration = faithful$eruptions # eruption durations
+> skewness(duration) # apply the skewness function 

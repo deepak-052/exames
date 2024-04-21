@@ -1,0 +1,47 @@
+pract-3 Using R execute the statistical functions: mean, median, mode, quartiles,
+range, inter quartile range histogram.
+
+Mean:
+> x <- c(12,7,3,4.2,18,2,54,-21,8,-5)
+result.mean <- mean(x)
+print(result.mean)
+
+x <- c(12,7,3,4.2,18,2,54,-21,8,-5)
+result.mean <- mean(x,trim = 0.3)
+print(result.mean)
+
+
+Median
+x <- c(12,7,3,4.2,18,2,54,-21,8,-5)
+median.result <- median(x)
+print(median.result)
+ 
+Mode
+getmode <- function(v) {
+ uniqv <- unique(v)
+ uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+v <- c(2,1,2,3,1,2,3,4,1,5,5,3,2,3)
+result <- getmode(v)
+print(result)
+charv <- c("o","it","the","it","it")
+result <- getmode(charv)
+print(result)
+
+Range.
+x=c(45,43,46,48,51,46,50,47,46,45)
+> max(x)-min(x)
+
+Histogram:
+> v<-c(9,13,21,8,36,22,12,41,31,33,19)
+> png(file="histogram.png")
+> hist(v,xlab = "Weight",col = "yellow",border = "blue")
+> dev.off()
+null device 
+
+> v <- c(9,13,21,8,36,22,12,41,31,33,19)
+> png(file = "histogram_lim_breaks.png")
+> hist(v,xlab = "Weight",col = "green",border = "red", xlim = c(0,40), ylim = c(0,5), breaks = 5)
+> dev.off()
+
+

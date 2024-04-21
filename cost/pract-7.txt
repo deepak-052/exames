@@ -1,0 +1,8 @@
+pract7
+Chi-squared Distribution
+> qchisq(.95, df=7)
+Library(“MASS”)
+car.data<-data.frame(Car93$AirBags, Car93$Type)
+car.data=table(Car93$AirBags, Car93$Type)
+print(car.data)
+print(chisq.test(car.data))

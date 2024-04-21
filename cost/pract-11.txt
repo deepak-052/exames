@@ -1,0 +1,62 @@
+> xbar=9900
+>mu0=10000
+> sigma=120
+> n=30
+> z=(xbar-mu0)/(sigma/sqrt(n))
+> z
+> alpha=.05
+> z.alpha=qnorm(1-alpha)
+> -z.alpha
+
+> xbar=2.1
+> mu0=3
+> mu0=2
+> sigma=0.25
+> n=35
+> z=(xbar-mu0)/(sigma/sqrt(n))
+> z
+> alpha=.05
+> z.alpha=qnorm(1-alpha)
+> z.alpha
+
+> xbar=14.6
+> mu0=15.4
+> sigma=2.5
+> n=35
+> z=(xbar-mu0)/(sigma/sqrt(n))
+> z
+> alpha=.05
+> z.half.alpha=qnorm(1-alpha/2)
+> c(-z.half.alpha, z.half.alpha)
+
+> xbar=9900
+> mu0=10000
+> s=125
+> n=30
+> t=(xbar-mu0)/(sigma/sqrt(n))
+> t=(xbar-mu0)/(s/sqrt(n))
+> t
+> alpha=.05
+> z.alpha=qnorm(1-alpha)
+> t.alpha=qt(1-alpha,df=n-1)
+> -t.alpha
+
+> xbar=2.1
+> mu0=2
+> s=0.3
+> n=35
+> t=(xbar-mu0)/(s/sqrt(n))
+> t
+> alpha=.05
+> t.alpha=qt(1-alpha,df=n-1)
+> t.alpha
+
+> xbar=14.6
+> mu0=15.4
+> s=2.5
+> n=35
+> t=(xbar-mu0)/(s/sqrt(n))
+> t
+> alpha=.05
+> t.half.alpha=qt(1-alpha/2,df=n-2)
+> c(-t.half.alpha, t.half.alpha)

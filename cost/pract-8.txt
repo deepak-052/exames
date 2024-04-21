@@ -1,0 +1,57 @@
+Binomial Distribution:
+
+> dbinom(4, size=12, prob=0.2)
+
+> dbinom(0, size=12, prob=0.2) +
++ dbinom(1, size=12, prob=0.2) +
++ dbinom(2, size=12, prob=0.2) +
++ dbinom(3, size=12, prob=0.2) +
++ dbinom(4, size=12, prob=0.2)
+
+> pbinom(4, size=12, prob=0.2)
+
+x<- seq(0,50,by=1)
+> y<- dbinom(x,50,0.2)
+> plot(x,y)
+> y<- dbinom(x,50,0.6)
+> plot(x,y)
+> x<- seq(0,100,by=1)
+> y<- dbinom(x,100,0.6)
+> plot(x,y)
+
+Normal Distribution:
+
+> pnorm(84, mean=72, sd=15.2, lower.tail=FALSE)
+
+Plot of Normal distribution:
+d: returns height of cdf
+> v<-c(0,1,2)
+> dnorm(v)
+[1] 0.39894228 0.24197072 0.05399097
+> x<-seq(-20,20,by=1)
+> y<-dnorm(x)
+> plot(x,y)
+> y <- dnorm(x,mean=2.5,sd=0.1)
+> plot(x,y)
+p:returns cdf
+> x<-seq(-20,20,by=.1)
+> y<- pnorm(x)
+> plot(x,y)
+> y<- pnorm(x,mean=3,sd=4)
+> plot(x,y)
+q: returns inverse of cdf
+> x<-seq(0,1,by=.05)
+> y<-qnorm(x)
+> plot(x,y)
+> y<-qnorm(x,mean=3,sd=2)
+> plot(x,y)
+> y<-qnorm(x,mean=3,sd=0.1)
+> plot(x,y)
+r: returns random generated numbers.
+> y<- rnorm(200)
+> hist(y)
+> y<- rnorm(200,mean=-2)
+> hist(y)
+> y<- rnorm(200,mean=-2,sd=4)
+> hist(y)
+> qqnorm(y)

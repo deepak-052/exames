@@ -1,0 +1,29 @@
+> M<-matrix(c(3:14),nrow=4,byrow=TRUE)
+> print(M)
+> N<-matrix(c(3:14),nrow=4,byrow=FALSE)
+> print(N)
+> rownames=c("row1","row2","row3","row4")
+> colnames=c("col1","col2","col3")
+> p<-
++ matrix(c(3:14),nrow=4,byrow=TRUE,dimnames=list(rownames,colnames))
+> print(p)
+> print(p[1,3])
+> print(p[4,2])
+> print(p[2,])
+> print(p[,3])
+> matrix1<-matrix(c(3,9,-1,4,2,6),nrow=2)
+> print(matrix1)
+> matrix2<-matrix(c(5,2,0,9,3,4),nrow=2)
+> print(matrix2)
+> result<-matrix1+matrix2
+> cat("Result of Addition ","\n")
+> print(result)
+> result<-matrix1-matrix2
+> cat("Result of Sub ","\n")
+> print(result)
+> result<-matrix1*matrix2
+> cat("Result of Multiplication ","\n")
+> print(result)
+> result<-matrix1/matrix2
+> cat("Result of Division ","\n")
+> print(result)

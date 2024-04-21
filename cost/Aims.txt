@@ -1,0 +1,35 @@
+ pract-1
+Aim: using R execute the basic commands , array, list and frames and vectors.
+1A-FACTORS ,DATAFRAME, LIST, Arrays
+1B-Basic DataTypes: Numeric, Integer, Complex, Logical, Character
+1C-Vector
+
+pract-2
+Aim: Matrix operation
+
+pract-3
+Aim: Using R execute the statistical functions: mean, median, mode, quartiles, range, inter quartile range histogram.
+
+pract-4
+Aim: Using R import the data from Excel/. Csv file and perform the above function.
+
+pract-5
+Standard Deviation, Covariance, Variance
+
+pract-6
+Skewness
+
+pract-7
+Chi-squared Distribution
+
+pract-8
+Binomial Distribution, Normal Distribution
+
+pract-9
+linear least square regression
+
+pract-10
+linear regression
+
+pract-11
+lower tail test of population mean with Known Variance

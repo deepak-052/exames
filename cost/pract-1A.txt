@@ -1,0 +1,57 @@
+#Factors:
+>Apple_colors<-c('greeen','green','red','yellow','yellow','yellow','green')
+> Factor_apple<-factor(Apple_colors)
+> print(Factor_apple)
+> print(nlevels(Factor_apple))
+
+#Data Frame:
+
+> emp.data<-data.frame(
++ emp_id=c(1.5),
++ emp_name=c("Rick","Dan","Michelle","Ryan","Gary"),
++ salary=c(623.3,515.2,611.0,729.0,843.25),
++ start_date=as.Date(c("2012-01-01","2013-09-20","2014-11-15","2014-05-11","2015-03-27")),
++ stringsAsFactors=FALSE)
+> print(emp.data)
+> str(emp.data)
+> result<-data.frame(emp.data$emp_name,emp.data$salary)
+> print(result)
+> result<-emp.data[c(3,5),c(2,4)]
+> print(result)
+
+# List
+
+> list_data<-list("RED","GREEN",c(21,32,11),TRUE,51.23,119.1)
+> print(list_data)
+> list_data<-list(c("JAN","FEB","MAR"),matrix(c(3,9,5,1,-2,8),nrow=2),list("green",12.3))
+>  names(list_data)<-c("1st Quarter","A-Matrix","a Inner list")
+> print(list_data)
+> print(list_data[1])
+> print(list_data$A_Matrix)
+> list_data[4]<-"New element"
+> print(list_data[4])
+> list_data[4]<-NULL
+> print(list_data[4])
+> list_data[3]<-"Updated element"
+> print(list_data[3])
+> list1<-list(1,2,3)
+> list2<-list("SUN","MON","TUE")
+> merged.list<-c(list1,list2)
+> print(merged.list)
+> list<-list(1:5)
+> list1<-list(1:5)
+> print(list1)
+> list2<-list(10:14)
+> print(list2)
+> v1<-unlist(list1)
+> v2<-unlist(list2)
+> print(v1)
+> print(v2)
+
+
+Array:
+
+> vector1 <- c(5,9,3)
+> vector2 <- c(10,11,12,13,14,15)
+> result <- array(c(vector1,vector2),dim = c(3,3,2))
+> print(result)

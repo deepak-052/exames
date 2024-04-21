@@ -1,0 +1,12 @@
+pract5 standard deviation
+>duration = faithful$eruptions
+> sd(duration) 
+
+Covariance 
+> duration = faithful$eruptions 
+> waiting = faithful$waiting 
+> cov(duration, waiting) 
+
+variance
+> duration = faithful$eruptions 
+> var(duration) 

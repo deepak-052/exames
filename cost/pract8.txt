@@ -1,0 +1,71 @@
+pract8
+Binomial distribution
+> dbinom(4, size=12, prob=0.2)
+
+dbinom(0, size=12, prob=0.2) +
++ dbinom(1, size=12, prob=0.2) +
++ dbinom(2, size=12, prob=0.2) +
++ dbinom(3, size=12, prob=0.2) +
++ dbinom(4, size=12, prob=0.2) 
+> pbinom(4, size=12, prob=0.2)
+
+
+
+> local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
++ if(nchar(pkg)) library(pkg, character.only=TRUE)})
+>dbinom (0, size=12, prob=0.2)+
++ +dbinom (1, size=12, prob=0.2)+
++ +dbinom (2, size=12, prob=0.2)+
++ +dbinom (3, size=12, prob=0.2)+
++ +dbinom (4, size=12, prob=0.2)
+
+> pbinom (4, size=12, prob=0.2)
+> x<-seq(0,50,by=1)
+> y<-dbinom(x,50,0.2)
+> plot(x,y)
+
+2nd diagram:--
+> local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
++ if(nchar(pkg)) library(pkg, character.only=TRUE)})
+> dbinom (4, size=12, prob=0.2)
+[1] 0.1328756
+> +dbinom (0, size=12, prob=0.2)+
++ + +dbinom (1, size=12, prob=0.2)+
++ + +dbinom (2, size=12, prob=0.2)+
++ + +dbinom (3, size=12, prob=0.2)+
++ + +dbinom (4, size=12, prob=0.2)
+[1] 0.9274445
+> pbinom(4, size=12, prob=0.2)
+[1] 0.9274445
+> x<-seq(0,50,by=1)
+> y<-dbinom(x,50,0.2)
+> y<-dbinom(x,50,0.6)
+> plot(x,y)
+
+3rd diagram
+ dbinom (4, size=12, prob=0.2)
+[1] 0.1328756
+> +dbinom (0, size=12, prob=0.2)+
++ + + +dbinom (1, size=12, prob=0.2)+
++ + + +dbinom (2, size=12, prob=0.2)+
++ + + +dbinom (3, size=12, prob=0.2)+
++ + + +dbinom (4, size=12, prob=0.2)
+[1] 0.9274445
+> pbinom(4, size=12, prob=0.2)
+[1] 0.9274445
+> x<-seq(0,50,by=1)
+> y<-dbinom(x,50,0.2)
+> y<-dbinom(x,50,0.6)
+> plot(x,y)
+> x<-seq(0,50,by=1)
+> y<-dbinom(x,50,0.2)
+> plot(x,y)
+> y<-dbinom(x,50,0.6)
+> plot(x,y)
+> x<-seq(0,100,by=1)
+> y<-dbinom(x,100,0.6)
+> plot(x,y)
+> 
+
+ 
+

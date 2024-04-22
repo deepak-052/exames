@@ -1,0 +1,10 @@
+activitydiagram
+casediagram-1  ,  casediagram-2
+collaborationdiagram
+componentdiagram
+dataflowdiagram
+deploymentdiagram
+erdiagram
+sequencediagram_1A  ,  sequencediagram-1B
+statediagram
+SE PRACTICAL MANUAL.pdf

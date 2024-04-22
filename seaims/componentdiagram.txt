@@ -1,0 +1,3 @@
+Aim: Study and implementation of Component Diagram.
+Q.1) Prepare a Component Diagram for ATM Machine.
+Q.2 Prepare Component Diagram for Operation Theater Processing part of Hospital.

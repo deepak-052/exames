@@ -1,0 +1,13 @@
+Aim: Study and implementation of Sequence Diagram.
+Q.1 Consider a physical bookstore such as shopping mall. There are two Use Cases used in the system, namely , Purchase Items and Return Items.
+Prepare a scenario for each Use Case and Draw a Sequence Diagram for it.
+Solution:
+1] Purchase Items:
+• Customer brings items to the counter.
+• Cashier scans each customer item.
+• Cashier totals order, including tax.
+• Cashier requests form of payment.
+• Customer gives credit card.
+• Cashier scans card.
+• Verifier reports that credit card payment is acceptable.
+• Customer signs credit card slip.

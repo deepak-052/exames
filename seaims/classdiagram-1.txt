@@ -1,0 +1,2 @@
+Aim: Study and implementation of Class Digram
+Case A: An XYZ hospital is a multi speciality hospital that includes number of doctors , nurses, wards. Patients having different kinds of ailments come to the hospital and get checkup done from the concerned doctors like Surgeons, Neurologist, Gynecologist and Pediatrician. Patients admitted to wards and undergo treatment. Patient gets discharge and pays Bill.

@@ -1,0 +1,5 @@
+2] Return Items :
+• Customer brings purchased item to the counter.
+• Customer has receipt from earlier purchase.
+• Cashier notes the payment was in cash.
+• Cashier accepts items and gives customer a cash refund.

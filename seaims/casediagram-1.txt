@@ -1,0 +1,12 @@
+AIM: Study and Implementation of Use Case Diagram.
+Q.1 Consider a physical bookstore, such as shopping mall.
+a) List actors that are involved in the design of a checkout system.
+b) List use cases that are involved in the purchase of items.
+c) Prepare use case diagram for above.
+Solution:
+A) I) Customer: A Person who initiates the purchase of items.
+ii) Cashier: An employee who is authorized to check out purchases at a cash register.
+iii) Payment Verifier: The remote system that approves use of credit or debit card.
+B) I) Purchase items: Customer purchase items and pays bill.
+ii) Return items: The customer brings back items that were previously purchased and gets refund.
+C)Diagram:

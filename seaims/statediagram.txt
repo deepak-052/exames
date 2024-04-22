@@ -1,0 +1,3 @@
+State Diagram
+Draw a State Diagram for a Telephone Line along with activities. The diagram concerns a phone line as well as the sequence associated with normal calls.
+At the start of a call, the telephone line is idle. When the phone is removed from the hook, it emits a dial tone and can accept the dialing of digits. Upon the entry of valid number, the phone system tries to connect the call and route it to proper destination. The connection can fail if the number is busy. If the connection is successful, the called phone becomes ringing. If the called party answers the phone, a conversation can occur. When the called party hangs up, the phone disconnects and reverts to idle when put on hook again.

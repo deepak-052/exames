@@ -1,0 +1,5 @@
+Aim: Study and implementation of Activity Diagram
+Q.1 Prepare an Activity Diagram for computing Restaurant Bill. There should be a charge for each delivered item. The total amount should be subject to tax and a service charge of 18% for groups of six or more. For smaller groups, there should be a blank entry for gratuity according to customer’s discretion. Any coupons or gift certificates submitted by the customer should be subtracted
+
+
+Q.2 Prepare Activity Diagram for the Cash Withdrawal from the ATM Machine. Use Swimlanes for activities performed by the organization.

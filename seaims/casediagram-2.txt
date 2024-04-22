@@ -1,0 +1,25 @@
+Q.2 Consider an ATM machine.
+a) List the actors and explain the relevance of each actor.
+b) Use Case Summary for an ATM machine is as below:
+i) System Startup
+The system is started up when the operator turns the operator switch to the "on" position.
+ii) System Shutdown:
+The system is shut down when the operator makes sure that no customer is using the machine, and then turns the operator switch to the "off" position.
+iii) Session
+A session is started when a customer inserts an ATM card into the card reader slot of the machine. The customer is asked to enter his/her PIN, and is then allowed to perform one or more transactions, choosing from a menu of possible types of transaction in each case.
+If a transaction is aborted due to too many invalid PIN entries, the session is also aborted, with the card being retained in the machine.
+iv) Transaction
+A transaction use case is started within a session when the customer chooses a transaction type from a menu of options. The customer will be asked to furnish appropriate details (e.g. account(s) involved, amount).
+The transaction will then be sent to the bank, along with information from the customer's card and the PIN the customer entered.
+v) Withdrawal
+A withdrawal transaction asks the customer to choose a type of account to withdraw from (e.g. Savings, Checking or Current) a menu of possible accounts.
+If the transaction is approved by the bank, the appropriate amount of cash is dispensed by the machine before it issues a receipt.
+vi) Deposit
+A deposit transaction asks the customer to choose a type of account to deposit to (e.g. checking) from a menu of possible accounts, and to type in a dollar amount on the keyboard.
+5
+vii) Transfer
+A transfer transaction asks the customer to choose a type of account to transfer from (e.g. checking) from a menu of possible accounts, to choose a different account to transfer to, and to type in a amount on the keyboard. No further action is required once the transaction is approved by the bank before printing the receipt.
+viii) Inquiry
+An inquiry transaction asks the customer to choose a type of account to inquire about from a menu of possible accounts. No further action is required once the transaction is approved by the bank before printing the receipt.
+ix) Invalid Pin
+An invalid PIN extension is started from within a transaction when the bank reports that the customer's transaction is disapproved due to an invalid PIN. The customer is required to re-enter the PIN and the original request is sent to the bank again. If the bank now approves the transaction, or disapproves it for some other reason, the original use case is continued; otherwise the process of re-entering the PIN is repeated.

@@ -1,0 +1,8 @@
+Aim: Draw E-R diagram and convert entities and relationship to table.
+Case study No:1
+Draw an ER diagram for following:-
+I. Department Offers course.
+II. Student enrolls for the course
+III. Instructors are appointed for various courses.
+IV. Instructors are belongs to department.
+V. Student pay fees.

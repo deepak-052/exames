@@ -1,2 +1,0 @@
-pract4:
-components :Arduino UNO, Potentiometer(wiper)

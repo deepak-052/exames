@@ -1,7 +1,0 @@
-1(b):-To combine basic hardware and software interaction offering a tangible demonstration of how code can be control physical components.
-
-Components Required 
-Name    Quantity      Component
-U1          1                   Arduino
-D1          1                   Red Led 
-R1          1                   220 ohm 

@@ -1,8 +1,0 @@
-pract7:- objective:- To make Student understand the procedure used for interacting a digital infrared sensor (more  specially PIR passive infrared sensor.It will help styudents to explore various object tracking based project.
-
-component required 
-Name      Quantity   Component
-U1                1            Arduino UNO R3
-D1                1            RED LED 
-PIR1             1             PIR sensor 
-R1                1              1k ohm 

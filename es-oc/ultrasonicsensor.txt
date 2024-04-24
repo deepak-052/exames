@@ -1,8 +1,0 @@
-pract6:- Objective --- To make students aware about the procedures for interfacing an arduino board with an ultrasonic sensor .This practical will provide an idea of implementing of range finding based projects.
-
-componets required
-Name       Quantity   Component
-U1                1            Arduino UNO R3
-D1                1            RED LED 
-PING1          1            Ultrasonic distance sensor
-R1                1            1k ohm 

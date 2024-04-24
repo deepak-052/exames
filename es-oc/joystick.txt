@@ -1,9 +1,0 @@
-pract10:-obejctive -- To make students understand the procedure to design a joystick using arduino.it will help students to explore various info related application project.
-
-
-Component required 
-Name              quantity      Componnet
-U1                       1              Arduino UNO R3
-D1 to D11          11              RED LED 
-R12                     1               Potentiometer 10k ohm
-R1 to R11           11              220 ohm

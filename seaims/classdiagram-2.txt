@@ -1,1 +1,0 @@
-Case B: A Lawn Mover consists of one blade, one engine, many wheels and one deck. The manufacturing process is flexible and largely combines all parts. Draw Class Diagram for the same using the concept of Aggregation.

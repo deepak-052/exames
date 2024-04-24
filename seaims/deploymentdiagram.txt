@@ -1,3 +1,0 @@
-Aim: Study and Implementation of Deployment Diagram
-Q.1 Prepare a Deployment Diagram for Online Vehicle Registration System.
-Q.2 Prepare a Deployment Diagram For ATM Machine.

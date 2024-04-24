@@ -1,3 +1,0 @@
-Aim: Study and implementation of Collaboration Diagram.
-Q.1 Prepare Collaboration Diagram of Library Management System.
-Q.2 Prepare Collaboration Diagram for ATM Machine.

@@ -1,0 +1,993 @@
+Practical No. 1
+Aim: To study the installation of Red Hat Enterprise Linux. Step 1: Booting the Installation Program on your machine.
+1.	You can boot the installation program using
+•	Boot CD-ROM — Your machine supports a bootable CD-ROM drive and you want to perform hard drive installation.
+2.	Insert the boot media and reboot the system. Your BIOS settings may need to be changed to allow you to boot from the CD-ROM or USB device.
+3.	To change your BIOS settings on an x86, AMD64, or Intel® 64 system, watch the instructions provided on your display when your computer first boots.
+4.	A line of text appears, telling you which key to press to enter the BIOS settings.
+5.	Once you have entered your BIOS setup program, find the section where the CD- ROM is first in your boot order.
+6.	This instructs the computer to first look at the CD-ROM drive for bootable media.
+7.	Press F10 to save your changes before exiting the BIOS.
+
+
+Step 2: Welcome to Red Hat Enterprise Linux
+1.	The Welcome screen does not prompt you for any input.
+2.	Click on the Next button to continue.
+
+ 
+Step 3: Language Selection
+1.	Using your mouse, select a language to use for the installation.
+2.	The language you select here will become the default language for the operating system once it is installed.
+3.	Selecting the appropriate language also helps target your time zone configuration later in the installation.
+4.	Once you select the appropriate language, click Next to continue.
+
+
+Step 4: Keyboard Configuration
+1.	Using your mouse, select the correct layout type (for example, U.S. English) for the keyboard you would prefer to use for the installation and as the system default.
+2.	Once you have made your selection, click Next to continue.
+
+ 
+Step 5: Enter the Installation Number
+Choose to skip entering the installation number.
+
+
+
+Step 6: Disk Partitioning Setup
+1.	Partitioning allows you to divide your hard drive into isolated sections, where each section behaves as its own hard drive.
+2.	Partitioning is particularly useful if you run multiple operating systems.
+3.	On this screen you can choose to create manual partition using the 'Create custom layout' option.
+4.	Once you have made your selection, click Next to continue.
+
+ 
+Step 7: Deleting a Partition
+1.	To delete a partition, highlight it in the Partitions section and click the Delete button.
+2.	Confirm the deletion when prompted.
+
+Step 8: Editing Partitions
+1.	To edit a partition, select the Edit button or double-click on the existing partition.
+2.	If the partition already exists on your disk, you can only change the partition's mount point.
+3.	To make any other changes, you must delete the partition and recreate it.
+
+Step 9: Adding Partitions
+1.	After deleting partitions, you can add new partitions to your system.
+2.	A window appears that asks for mount point to be made for the partition.
+3.	Here we have made two partions: first on mount point ―/‖with ext3 file system and for another do not select mount point , just select file system ―swap‖.
+
+a.	Mount Point: Enter the partition's mount point. This partition should be the root partition.
+b.	File System Type: Using the pull-down menu, select the appropriate file system type for this partition. Select ext3.
+ext3:
+•	The ext3 file system is based on the ext2 file system and has one main advantage —journaling.
+•	Using a journaling file system reduces time spent recovering a file system after a crash as there is no need to fsck the file system.
+•	The ext3 file system is selected by default and is highly recommended.
+c.	Size (MB): Enter the size of the partition.
+d.	swap— Swap partitions are used to support virtual memory. Data is written to a swap partition when there is not enough RAM to store the data your system is processing.
+e.	OK: Select OK once you are satisfied with the settings and wish to create the partition.
+ 
+ 
+Step 10: Boot Loader Configuration
+1.	To boot the system without boot media, you usually need to install a boot loader.
+2.	A boot loader is the first software program that runs when a computer starts.
+3.	It is responsible for loading and transferring control to the operating system kernel software.
+4.	The kernel, in turn, initializes the rest of the operating system.
+5.	GRUB (GRand Unified Bootloader), which is installed by default, is a very powerful boot loader.
+6.	GRUB can load a variety of free operating systems, as well as proprietary operating systems with chainloading.
+7.	Every bootable partition is listed, including partitions used by other operating systems.
+8.	Select Default beside the preferred boot partition to choose your default bootable OS.
+9.	You cannot move forward in the installation unless you choose a default boot image.
+
+
+Step 11: Network Configuration
+The installation program automatically detects any network devices you have and displays them in the Network Devices list. Here, eth0.
+
+ 
+Step 12: Time Zone Configuration
+1.	Set your time zone by selecting the city closest to your computer's physical location. Click on the map to zoom in to a particular geographical region of the world.
+2.	From here there are two ways for you to select your time zone:
+a.	Using your mouse, click on the interactive map to select a specific city (represented by a yellow dot). A red X appears indicating your selection.
+b.	You can also scroll through the list at the bottom of the screen to select your time zone. Using your mouse, click on a location to highlight your selection.
+
+
+Step 13: Set Root Password
+1.	Setting up a root account and password is one of the most important steps during your installation.
+2.	The root account is used to install packages, and perform most system maintenance.
+3.	The root password must be at least six characters long; the password you type is not echoed to the screen.
+4.	You must enter the password twice; if the two passwords do not match, the installation program asks you to enter them again.
+
+ 
+Step 14: Package Group Selection
+1.	The Package Installation Defaults screen appears and details the default package set for your Red Hat Enterprise Linux installation.
+2.	To customize your package set further, select the Customize now option on the screen.
+3.	Clicking Next takes you to the Package Group Selection screen.
+4.	You can select package groups, which group components together according to function (for example, X Window System and Editors), individual packages, or a combination of the two.
+
+
+Step 15: Adding Optional Packages
+Once a package group has been selected, if optional components are available you can click on Optional packages to view which packages are installed by default, and to add or remove optional packages from that group.
+
+ 
+Step 16: Preparing to Install
+A screen preparing you for the installation of Red Hat Enterprise Linux now appears.
+
+Step 17: Installing Packages
+At this point there is nothing left for you to do until all the packages have been installed. How quickly this happens depends on the number of packages you have selected and your computer's speed.
+
+ 
+Step 18: Installation Complete
+Your Red Hat Enterprise Linux installation is now complete!
+
+ 
+Practical No.: 2
+Aim: Graphical user Interface & command line interface
+A.	Exploring the graphical desktop:
+
+1.	In the login screen enter the login name ―student‖ and type the password.
+
+
+2.	In the upper right corner you can see the name of the user who is currently logged in. Click this username to get access to different tools such as the tool that allows you to change the password.
+
+ 
+
+ 
+
+
+
+ 
+
+
+3.	Right click the graphical desktop and select open in terminal next page type ls.
+
+
+
+
+
+
+
+ 
+4.	On the graphical desktop you will find an icon representing your home folder click on it navigate to /etc folder you will notice that as a normal user you have limited access to the folder.
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+5.	Right click a workspace icon and select the number of workspace you want to be displayed.
+
+
+ 
+6.	Right click the network manager icon in the upper right corner of dektop. Next click connection information to display information about current connection.
+
+
+
+
+
+ 
+
+
+7.	Press F1 to show the help system type the keyboard you want to search for browse the results.
+
+
+
+
+ 
+B.	The Command line Interface.
+1.	cd: cd command for the change directory it is an case sensitive.
+2.	touch: The touch command is the easiest way to create new, empty files, it is also used to change the timestamps.
+3.	ls: The ls command is command line utility for listing the contents of a directory or directories given to it via standard input, it writes results to standard output.
+4.	mkdir: The mkdir command in UNIX allow user to create directory or folders as they are referred to in same operating system.
+5.	cat: The cat command is one of the most frequently used command in linux, like operating system. Cat command allows to create single of multiple file
+6.	rmdir: This is important because once deleted, it is extremely difficult or impossible to recover detected data on UNIX operating system.
+7.	rm: It is used to delete files from a file system. By default, it does not remove directories.
+
+
+ 
+8.	cp: cp command in linux which is stands for copy this command is used to copy files or group or files or group of files or directory.
+9.	mv: The mv command is a command line utility that moves file or directories from one place to another.
+
+
+ 
+10.	pwd: pwd command (Present working dircetory) writes the full path name of the current working directory to the standard output.
+11.	chmod: The command name chmod stands for the [change mode] and it is used to define the way of file can be.
+
+Two types of permissions:
+a)	Absolute permissions: Use numbers to represent file permission (the method most commonly used to set permissions) when you change permission by using the absolute mode to represent permission for each triooke by Oral number
+
+Category	Permissions
+u (user)	r (read)
+g (group)	w (write)
+o (other)	x (execute)
+
+b)	Relative permission: Use a combination of letters of symbolic to add or remove permissions.
+Octal	Permissions
+U.G.O	Significance
+0	– – –	No permission
+1	– – x	Execute only
+2	– w –	Write only
+3	– w x	Write and Execute
+4	r – –	Read only
+5	r – x	Read and Execute
+6	r w –	Read and Write
+7	r w x	All Permissions
+
+ 
+12.	cal: Calender on linux command line. Sometimes it shows that it may the excellent of convenient command line tools are forgotten when they are replaced by graphical tools.
+
+13.	bc (The Calculator): It is used for a command line calculator which is similar to basic calculator, by using which we can do basic mathematical calculations. When you invoke bc wiithout arguments, the cursor keeps on blinking and nothing seems to happen key in the following arthmethic and then use [ctrl + d] to quit bc.
+
+ 
+14.	date: date command is also used to set the date & time of the system, by default the date command displays the date in the time zone on which UNIX.
+
+date + %m: It shows the current month in number.
+date + %M: It shows the minute‘s.
+date + %h: It shows the month.
+date + “%h %m”: It shows a month in number also.
+date + %d: It shows date.
+date + %y: It shows current year. date + %D: It shows full date. date + %T: It shows current time.
+
+
+ 
+15.	head: Command is used for reads the first ten lines of any text given to it as an input and write them to standard output.
+16.	tail: The tail command line utility for outputting the last ten lines given to it as input and write them to standard output.
+17.	tac: tac command is partially the reverse version of cat command (also spelled backward)
+
+
+
+ 
+ls*: This command is used for listing all contents of a directory.
+ls [abc]*: This command is used for showing all the directories that start from the a,b,c letters.
+ls /etc/*.a*: This command is used for the directory which can end with ‗a‘ or after ‗a‘ anything word or before (.) also.
+ls -d: It can be used for displaying all the directories.
+
+
+
+
+
+ 
+18.	history: This command is used for showing all the recent / last commands that have been 1000 commands of any user are rembered.
+
+
+!: History command shows a list of all the recently used commands. From this list, a command can also be restarted. For ex: if you see command 35 in the list of commands, you can easily return this command by using it‘s number preceded by an exclamation mark (!) or
+!35 in this example
+
+ 
+Piping:
+ps aux | less: This command provides a list of all the proccess that are currently running on your computer the ten option shows output as ten so that you can browse it page by page
+ps aux | grep crond: This command is used to detect only the lines that contains the text crond.
+Redirection:
+ps aux > ~ / ps output.text: This command is used to detect only the lines that contains the text crond.
+cat ~/output.txt: This command is used for viewing the output file of the above command
+i.e. ps aux > ~/output.txt
+
+
+
+
+ 
+Practical 3
+
+Aim: Working with Users, Groups & Permissions.
+
+A.	Creating users and groups:
+
+Step 1: Open a root shell and use the command useradd user1 to create user & passwd user1 to give the password to user1.
+ 
+
+Step 2: Use the command useradd user2 to create user & passwd user2 to give the password to give the password to user2.
+Step 3: Create two groups ‗sales‘ & ‗account‘ using groupadd command.
+Step 4: Use userid user1 to use current group assessment for user1.
+Step 5: Use usermod -aG sales user1 to add user to group sales as secondary group verify this by using id user1.
+ 
+
+Step 6: Repeat the step 4 & step 5 for user 2.
+Step 7: Repeat step 5 to add users user1 & user2 to the group account and verify by using id cmd.
+
+ 
+B.	Setting Permissions for users & groups:
+Step 1: From root shell, type mkdir -p/data/sales/data/account.
+
+Step 2: Before setting the permissions, change the owner of directory using chown user1. sales/data/sales + chown user1 account/data/account.
+Step 3: Set the permission to enable user & group owner to write file to this directory deny
+all access for others chmod 770/data/sales chmod 770/data/sales
+Step 4: Use su -user2 to become user2 and change directory to /data/account use touch emptyfile to create file in this directory.
+Step 5: Still as user2, we cd /data/sales & touch emptyfile to create a file in this directory. 
+Step 6: Open the file /etc/passwd using vi editor & check user1 & user2 are created having uid and gid.
+Step 7: Open file /etc/group using vi editor and check groups sales & account are created and which users they belong to.
+Step 8: Open a new terminal
+-Use ls to check the directory data is created.
+-Change directory to data & check it‘s content.
+-Use ls -l for details.
+ 
+Practical 4
+
+Aim: Working with Console, RPM and YUM.
+A.	Working with Console
+1.	Console 
+ 
+
+Enter the below highlighted line in the above file.
+ 
+2.	Gaining Privileges
+ 
+
+ 
+Insert the highlighted line exactly below root line. 
+ 
+
+ 
+ 
+
+B.	RPM
+Install wget
+ 
+https://dlcdn.apache.org//directory/apacheds/dist/2.0.0.AM27/apacheds-2.0.0.AM27-x86_64.rpm
+
+dowmload rpm file 
+ 
+
+C.	Yum
+ 
+Press y to continue
+ 
+ 
+
+ 
+Practical 5
+Aim : Working with storage, network and Infrastructure Services
+A.	Working with storage 
+Create 4 partitions on /dev/sdb device that you work with also make sure that all currently existing partitions and volumes are wipebefore you begin first partition have to be 500MB in size and created as primary partition use the first partition encrypted value with the name encrypt wall . Format this volume with and make sure it mounts automatically when your server reboots,use the 4 partitions in LVM setup.Create a logical volume with the name LOGVOL1 in the BG group, mount this as exit file systm mounts automatically when you reboot your server.
+Step 1 : Insert the USB Flash drive that you used with your server if the window opens showing you the contents of USB Flash drive close it.
+Step 2 : Open the root shell and type the command dmesg to get the device name.
+Step 3 : Use the following command to wipe of it's content quickly. dd if = /dev/zero of = /dev/sda
+ 
+Step 4 : Use fdisk -cu /dev/sda to open the fdisk on the device and create new partition on it.
+Step 5 : Enter m to overview all the commands.
+
+
+Step 6 : Type n for new partition.
+Step 7 : Type p for primary partitions.
+Step 8 : Enter partition 1 for 1st sector of partition it will take the default value of 208
+Step 9 : For the last sector enter the value +500 and enter.
+Step 10 : Type p to list the point of current partitions.
+Step 11 : Again press N to create new partitions.
+Step 12 : Type e for extended partitions.
+Step 13 : Enter partition No. 2 for the first sector of partition it will take the default value.
+Step 14 : For the last sector enter it will take the value.
+ 
+
+ 
+Step 15 : Again press n to create new partitions.
+Step 16 : Type L for logical partitions.
+Step 17 : For the first sector of partitions it will take default value.
+Step 18 : For last sector +500MB and enter.
+Step 19 : Type p to print the list of current partition.
+Step 20 : Type w to write new partition to disk.
+Step 21 : Type fdisk -cu /dev/sda to open the fdisk interface.
+Step 22 : Type n to create new partitions and choose L for logical partition. Step 23 : Next press enter to select the default starting sector for this partition. Step 24 : Type +500MB to make this a 500MB partition.
+Step 25 : Type t to change the partition type.
+Step 26 : Enter partition number 6 and partition type 8E.
+Step 27 : Type w to write new partition to disk and exit.
+
+ 
+
+ 
+
+Step 28 : User fdisk -cul /dev/sdb to see the current partition on the disk.
+
+
+
+Step 29 : Use pv create /dev/sdb6 to convert it into LVM physical volume.
+Step 30 : Use bg create vgroup /dev/sda6 to create a volume group with the name vgroup and to put the logical volume /dev/sdb in it.
+ 
+Step 31 : Use lv create -n logvol1 -L -124M /dev/vgroup to create a logical volume in volume group.
+
+Step 32 : Use the mkfs ext4 /dev/vgroup/logvol1 to format the volume with exit file system.
+Step 33 : Use crypt setup look format /dev/sda1 to format the 1st partition as encrypted once when if you really want to do this type YES in all the uppercase. Enter the password you are going to use.
+
+
+ 
+Step 34 : Type crypt setup luks open /dev/sda1 cryptvol to open the encrypted volume and make it accessible as a device /dev/maper/cryptvol.
+
+Step 35 : Now use mkfs.ext4 /dev/maper/cryptvol to put a file system on encrypted device you have just open.
+Step 36 : Use vi /etc/crypttab to open the file /dev/crypttab put following line in it crypttab
+/dev/sdb1
+ 
+Step 37 : Use vi /etc/fs tab and put the following line in it
+/dev/mapper/cryptvol/dev/vgroup.logvol
+
+ 
+B.	 Working with Networking
+Step 1: Use IP address show to know the IP address of our system. Step 2: Use IP route to know the route path
+Step 3: Open the file /etc/resolve.com using cat to get the address of the main server. Step 4: Add a new IP address to the device eth1.
+Step 5: Open the file IFCFG-Auto-eth0 present in /etc/sysconfig/network-scripts
+Step 6: Query INS to find out which DNS service is authorative for www.sanderbanbugt.com
+
+
+ 
+
+ 
+
+
+
+
+C.	Configuring and enabling infrastructure services
+1.	Checking runlevels.
+ 
+2.	Installing services. Press y when asked to download dependencies.
+ 
+
+3.	Go to System → Administration → Services.
+ 
+
+4.	A Service Configuration window appears from where services can be started, stopped, checked the status. It can be checked whether service is enabled or disabled. 
+ 
+
+5.	To display list of system services. 
+ 
+
+6.	To check a service starting at a which runlevel, to on a service on runlevels 2,3,4 and 5 and check its status. 
+ 
+7.	To start, restart, stop or check status of a service.
+ 
+
+D.	Configuring OpenSSH
+Perform on CentOS Server 
+Login as root user
+
+Enabling and Testing the SSH Server
+1.	From a terminal with root permissions, check whether ssh client and server are installed on the device. 
+2.	If not, use yum install openssh-server to install the ssh server package.
+3.	Use the chkconfig sshd on command to enable the SSH service, and add it to your server’s runlevels. 
+4.	Create a user lsa-it and assign a password to the same. 
+5.	Open the ssh configuration file /etc/ssh/sshd_config
+6.	Modify the below line to no and add the highlighted line as shown.
+#PermitRootLogin no
+ 
+7.	Save and exit the file.
+8.	Restart the sshd service.
+ 
+9.	Open the command prompt on windows and login through ssh followed by username@ipaddressoflinuxserver machine. It will ask for password of the user.
+10.	After entering password, the ssh connection is open. 
+ 
+11.	On linux system, login through ssh followed by username@ipaddressoflinuxserver machine. It will ask for password of the user.
+12.	After entering password, the ssh connection is open. 
+13.	Type exit to close the SSH sessions on both windows and linux machine.
+  
+
+ 
+Practical 6
+Aim: Configuring Server for File Sharing
+A. Configuring NFS Server
+
+Perform on CentOS Server Login as root user
+1.	Login as root user.
+2.	Verify IP address of server using ifconfig command.
+3.	Install NFS using yum install nfs-utils
+4.	Create directory /linux and two file abc.txt and xyz.txt within it to be exported.
+5.	Create directory /lsa and two file lmn.txt and pqr.txt within it to be exported.
+6.	Check whether created or not.
+7.	Give permissions to the created directories.
+ 
+8.	Open configuration file /etc/exports using vi and enter the following:
+/linux is read only by default.
+/lsa is read write with root squash. Hence root user of client will be considered as anonymous user on nfs server and will be identified as nfsnobody user.
+ 
+9.	Restart rpcbind and nfs service. Stop firewall.
+
+Perform on CentOS Client
+
+1.	Login as root user.
+2.	Verify IP address of server using ifconfig command.
+3.	Install NFS using yum install nfs-utils
+ 
+
+ 
+4.	On client, showmount command shows all shared directories created on server.
+5.	Create two local directories on client named tyit and syit .
+6.	Mount server exported directory on it.
+7.	On listing it shows up the content of server export directory.
+8.	We have mounted read only directory /linux on tyit. Hence client is not able to create a file in it.
+9.	/lsa is read write directory which is mounted on syit, hence client is able to create files. Create a new file uvw.txt on client. You can check on server.
+ 
+ 
+On Server
+1.	Because of root squash, client user is anonymous user ‗nfsnobody‘ for nfs server.
+2.	Open configuration file and make following changes:
+ 
+
+On Client
+1.	Create a new file in syit.
+On Server
+Because of no root squash, client root user is identified as root user on nfs server.
+ 
+B.	Configuring FTPServer
+Perform on CentOS Server
+
+1.	Login as root user.
+2.	Verify IP address of server using ifconfig command.
+3.	Install ftp using yum install vsftpd* command.
+4.	Edit the configuration file /etc/vsftpd/vsftpd.conf using vi. anonymous_enable = NO
+local_enable = YES
+xferlog_file = /var/log/vsftpd.log listen = YES
+userlist_enable = YES Press Esc :wq to save and exit.
+5.	Create a user ‗user2‘. Also give password using passwd command.
+6.	Change directory to /home/user2
+7.	Create 4 empty files and give permissions.
+ 
+8.	Start the service.
+Perform on CentOS Client
+1.	Login as root user.
+2.	Verify IP address using ifconfig command.
+3.	Ping to server. It should work.
+4.	Install ftp on client using yum install ftp command.
+5.	Create directory ftpdemo.
+6.	Change directory to ftpdemo.
+7.	Check present working directory.
+8.	Create 3 empty files.
+9.	Stop service for firewalls.
+
+
+ 
+10.	Login as ftp using ftp command with ip address of server. It will ask you for username. Enter user2. When asked for password enter its password.
+11.	Use ls to see files on server.
+12.	Download the file on client from server using get command.
+13.	Upload the file from client to server using put command.
+14.	To end ftp connection use bye command.
+15.	Use ls to check changes.
+
+
+On CentOS Server
+1.	Change directory to user2 and use ls to check files uploaded by client.
+ 
+
+
+Practical 7
+
+ 
+Aim: Configuring DHCP Server, Web Server and Mail Server.
+A.	Configuring DHCP Server
+Perform on CentOS Server
+To change the hostname of server: 
+1.	Login as root user and check the IP address of server.
+2.	Change the hostname of server:
+•	Open /etc/sysconfig/network
+Modify HOSTNAME= server.viva.edu	save n exit
+•	Open /etc/hosts
+Add line 172.16.20.120	server.viva.edu	save n exit
+•	Now hostname server.viva.edu
+•	Now run hostname
+3.	Install dhcp using yum install dhcp* command.
+4.	Edit configuration file /etc/dhcp/dhcpd.conf. Initially when opened its empty.
+5.	Copy	content	of	/usr/share/doc/dhcp-4.1.1/dhcpd.conf.sample	to
+/etc/dhcp/dhcpd.conf. When asked whether to overwrite, type yes and enter.
+ 
+6.	Now edit configuration file /etc/dhcp/dhcpd.conf. option domain-name ―viva.edu;
+option domain-name servers ―server.viva.edu; authoritative;
+#subnet (comment the subnet line preceding by #) subnet 172.16.0.0 netmask 255.255.0.0 {
+range 172.16.20.40 172.16.21.60
+#option routers (comment the subnet line preceding by #)
+}
+Press Esc and save and exit the file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7.	Start the dhcpd service.
+8.	Stop the firewall service.
+9.	After completing configuration on server, start the client system and login as root user.
+10.	Check the IP address on it by using ifconfig command.
+11.	You will see that the address is one from the range specified on server.
+
+ 
+B.	Configuring Web Server
+Step 1: Ping to check the connectivity
+Step 2: Change the directory to /etc/httpd.check if conf.d file is present 
+Step 3: Change directory to /var/www/html and create a file index.html
+<html>
+<head>
+<title>My page</title>
+</head>
+<body>
+<h1>This is apache server</h1>
+</body>
+</html>
+Step 4: Start the httpd service
+Step 5: Open the browser and type localhost
+
+ 
+C.	Configuring Mail Server 
+Perform on CentOS Server
+To change the hostname of server:
+•	Open /etc/sysconfig/network
+	Modify HOSTNAME= server.viva.edu	save n exit
+•	Open /etc/hosts
+	Add line 172.16.20.120	server.viva.edu	save n exit
+•	Now hostname server.viva.edu
+•	Now run hostname
+1.	Login as root user.
+2.	Verify IP address and hostname of server using ifconfig and hostname command.
+3.	Install mail server using yum install postfix.
+4.	Edit the configuration file /etc/postfix/main.cf
+myhostname = server.viva.edu 
+mydomain = viva.edu 
+myorigin = $mydomain
+mydestination = $myhostname, localhost.$mydomain, localhost 
+mynetworks = 172.16.0.0/16
+Press Esc :wq to save and exit.
+5.	Start the service.
+6.	Now root sends mail to user2 using mail command. Enter the subject and data you want to send and press Ctrl+d to end the file.
+7.	Login as user2 to check the mail.
+8.	Now user2 sends mail to root using mail command. Enter the subject and data you want to send and press Ctrl+d to end the file.
+9.	Login as root to check the mail.
+
+
+ 
+
+ 
+Practical 8
+Aim: Configuring Monitoring and Automation Tasks
+A. Configuring System Monitoring Tools
+
+i.	Using nice to Change Process Priority:
+
+In this exercise, you‘ll start four dd processes, which, by default, will go on forever. You‘ll see that all of them are started with the same priority and receive about the same amount of CPU time and capacity. Next you‘ll adjust the niceness of two of these processes from within top, which immediately shows the effect of using nice on these commands.
+1.	Open a terminal window, and use su - to escalate to a root shell
+2.	Type the command dd if=/dev/zero of=/dev/null &, and repeat this four times.
+
+3.	Now start top. You‘ll see the four dd commands listed at the top. In the PR column, you can see that the priority of all of these processes is set to 20. The NI column, which shows the actual process niceness, indicates a value of 0 for all of the dd processes, and, in the TIME column, you can see that all of the processes use about the same amount of processor time.
+
+ 
+4.	Now, from within the top interface, press r. On the PID to renice prompt, type the PID of one of the four dd processes, and press Enter. When asked Renice PID 3309 to value:, type 5, and press Enter.
+
+
+
+ 
+5.	With the previous action, you lowered the priority of one of the dd commands. You should immediately start seeing the result in top, because one of the dd processes will receive a significantly lower amount of CPU time.
+
+6.	Repeat the procedure to adjust the niceness of one of the other dd processes. Now use a niceness value of -15. You will notice that this process now tends to consume all of the available resources on your computer. Thus, you should avoid the extremes when working with nice.
+
+ 
+
+
+ 
+
+
+ 
+7.		Use the k command from the top interface to stop all processes where you adjusted the niceness.
+
+
+
+ 
+
+ 
+
+
+ii. System monitor tool
+
+ 
+
+
+ 
+
+iii. free command 
+To check used and free memory in kb and mb
+ 
+
+iv. lsblk 
+To check list of available block devices in tree structure and ordinary structure. 
+ 
+v. blkid 
+To display information about available block devices.
+ 
+
+vi. findmnt
+To display currently mounted file system 
+ 
+
+vii. df
+To display detailed report on system’s disk space usage.
+
+ 
+viii. du
+To display amount of space that is being used by files in a directory. 
+ 
+ 
+ 
+
+ix. lspci
+To display information about PCI buses and devices attached to them.
+ 
+ 
+x. lsusb
+To display information about USB buses and devices attached to them.
+ 
+ 
+B.	Configuring rsyslog
+1.	Login as a root user on server.
+2.	Open the file /etc/rsyslog.conf
+3.	Enter the following line below the line *.info;mail.none;authpriv.none;cron.none
+Local1.info	/var/log/VIVA
+Save the file using :wq
+4.	Restart the rsyslog service
+5.	Use command logger –p local1.warn “Test Message to check” to see from where the message is coming. 
+6.	Use tail command to check log messages in default file. 
+ 
+
+7.	To check message in the created file.
+ 
+ 
+C. Configuring cron, anacron, at and batch
+i. Configuring cron
+1. Open a terminal, and make sure you are logged in with your normal user account.
+2. Type crontab -e to open the crontab editor.
+3. Type the following line, which w ill send an email message every five minutes: 
+*/5 * * * * mail -s "hello root" root <
+4. Use the vi command :wq! to close the crontab editor and save your changes.
+5. Wait five minutes. Then, in a root terminal, type mail to star t the command-line mail program. You should see a message with the subject hello root that was sent by your normal user account. Type q to quit the mail interface.
+6. Go back to the terminal where you are logged in with the normal user account, and
+type crontab -r. This deletes the current crontab fi le for your user account.
+ 
+
+ 
+ii. Configuring Anacron
+1.	Login as root user.
+2.	Open file /etc/ancrontab using vi.
+3.	Add following lines at the end of file 
+1      5     backup         tar czhfv /tmp.tar  /tmp
+1      5     dailyjob	pwd >> ~/cronoutput
+1      5     dailyjob	ps aux | grep crond >> ~ps.txt
+4.	Save and exit the file.
+5.	Restart the crond service using service crond restart command. 
+ 
+ 
+iii. Configuring At
+1.	Start the service at.
+2.	Check the status and restart it.
+3.	Use command at followed by a time.
+4.	In at> prompt, mention commands to be executed by that time period.
+5.	Close the prompt with Ctlr+D.
+6.	Check the pending jobs atq.
+7.	Run ls to see the command given in at. 
+ 
+
+
+iv. Configuring batch
+1.	Enter command batch.
+2.	In at> prompt enter commands to be executed.
+3.	Close the prompt with Ctlr+D.
+4.	Check the pending jobs atq.
+5.	Run ls to see the command given in batch. 
+  
+
+ 
+Practical 9
+Aim: Firewall and Cryptographic Services
+A.	Securing Server with iptables
+Step 1 : Type iptables -L -V to display current configuration
+Step 2: Type the following commands :iptables -p INPUT ACCEPT iptables -P OUTPUT
+ACCEPT iptables -P FORWARD ACCEPT, iptables -F.
+
+Step 3: Use iptables -L -V to verify that the policy is set for all three chains in filter tables.
+Step 4: Use ping to check the connectivity.
+Step 5: Set a policy for 3 chains type the following iptables -P INPUT DROP, iptables -P OUTPUT DROP, iptables -P FORWARD DROP.
+
+ 
+Step 6: Open loopback interface first the put ssh, ptp on their port numbers.
+
+
+
+Step 7: Save the current configuration by service iptables save command to add an exception
+ 
+ie allow one specific ip address to access any service usp iptables.
+-L, -V –line –number
+Step 8: Create the exception before.
+
+ 
+B.	Setting up Cryptographic Services
+ Perform on CentOS Server
+Login as root user
+a.	Use yum install -y crypto-utils mod_ssl to install the RPM package that contains the genkey command.
+ 
+B. Use genkey --days 365 yourserver.example.com command to generate keys.
+
+It will specify the location of keys and certificate, press Next.
+
+b.	Select the key size you want to use. Select the recommended one.
+
+
+ 
+c.	The system will generate some random bits that are necessary to produce the key.
+
+
+
+
+d.	Once the key has been generated, genkey asks whether you want to create a certifi cate signing request. Select No.
+ 
+
+
+e.	Enter the passphrase for private key. Give space bar here * appears and enter.
+
+Enter a long passphrase.
+
+
+f.	Now enter the appropriate information to identify your server.
+
+g.	After you enter the appropriate identification, the public and private keys are written to the appropriate directories and are ready for use.
+ 
+h.	Open the certificate using following command.
+
+
+
+ 
+
+ 
+Practical 10
+Aim: Write the program for following
+A.	Programs on Shell Scripts
+1.	Write a shell script to show various system configurations like:
+a.	Currently logged user and his login name.
+b.	Your current shell.
+c.	Your home directory
+d.	Your operating system type.
+e.	Your current path.
+f.	Your current working directory.
+g.	Currently number of users logged in.
+if [ $# -ne 0 ]
+then
+echo "Please do not use arguments"
+exit
+fi
+echo "Currently logged user and his login name is `who am i`"
+echo "Your current shell is $SHELL"
+echo "Your home directory is $HOME"
+echo "Your operating system type is $OSTYPE"
+echo "Your current path is $PATH"
+echo "Your current working directory is $PWD"
+echo "Current login users is `who |wc -l`"
+ 
+2.	Write a shell script to find lowest of two numbers.
+echo Enter two numbers:
+read n1 n2
+if [ $n1 -lt $n2 ]
+then
+        echo "First number is lowest."
+else
+        echo "second number is lowest."
+fi
+ 
+3.	Write a shell script to find factorial of a number.
+#!/bin/bash
+fact=1
+echo -e "Enter a number:"
+read n
+if [ $n -gt 0 ] ; then
+for ((i=$n;i>=1;i--))
+do
+        fact=`expr $fact \* $i`
+done
+fi
+echo "Factorial of $n is $fact."
+ 
+
+4.	Write a shell script to check if the number is even or odd.
+echo "Enter a number:"
+read n
+if [ $(($n % 2)) -eq 0 ]
+then
+        echo "The number is even."
+else
+        echo "The number is odd."
+fi
+ 
+
+5.	Write a shell script to check whether number is armstrong.
+echo "Enter the number:"
+read c
+x=$c
+sum=0
+r=0
+n=0
+while [ $x -gt 0 ]
+do
+        r=`expr $x % 10`
+        n=`expr $r \* $r \* $r`
+        sum=`expr $sum + $n`
+        x=`expr $x / 10`
+done
+if [ $sum -eq $c ]
+then
+        echo "Number is armstrong."
+else
+        echo "Number is not armstrong."
+fi
+ 
+
+ 
+B. Shell script to automate or monitor tasks/process
+Monitoring activity of httpd process 
+Write the program using vi editor. 
+ 
+service httpd start
+ 
+
+ 
+Practical No. 11
+Aim: Perform daily system administration task 
+A.	Managing Processes
+Different ways to manage your jobs is shown in the below steps:
+1.	From a graphical user interface, open a terminal, and from that terminal, start the system-config-users program. You will see that the terminal is now occupied by the graphical program you‘ve just started and that you cannot start any other programs.
+
+2.	Click in the terminal where you started system-config-users, and use the Ctrl+Z key sequence. This temporarily stops the graphical program and returns the prompt on your terminal.
+
+3.	Use the bg command to move the job you started by entering the system- configusers command to the background. You can now continue using the graphical user interface and, at the same time, have access to the terminal where you can start other jobs by entering new commands.
+
+4.	From the terminal window, type the jobs command. This shows a list of all jobs that are started from this terminal. You should see just the system-config-users command. Every job has a unique job number in the list displayed by the jobs command. If you have just one job, it will always be job 1.
+
+5.	To put a background job back into the foreground, use the fg command.
+By default, this command will put the last command you started in the background into the foreground. If you want to put another background job into the foreground, use fg followed by the job number of the job you want to manage
+
+ 
+Managing Proccess with ps & kill:
+
+In this exercise, you will start a few processes to make the parent-child relationship between these processes visible. Then you will kill the parent process, and you will see that all related child processes also disappear.
+1.	Open a terminal window (right-click the graphical desktop, and select Open In Terminal).
+
+2.	Use the bash command to start Bash as a subshell in the current terminal window.
+
+3.	Use ssh -X localhost to start ssh as a subshell in the Bash shell you just opened. When asked if you want to permanently add localhost to the list of known hosts, enter yes. Next enter the password of the user root.
+
+4.	Type gedit & to start gedit as a background job.
+
+5.	Type ps afx to show a listing of all current processes, including the parent-child relationship between the commands you just entered.
+
+6.	Find the PID of the SSH shell you just started. If you can‘t fi nd it, use ps aux | grep ssh. One of the output lines shows the ssh -X localhost command you just entered. Note the PID that you see in that output line.
+
+7.	Use kill followed by the PID number you just found to close the ssh shell. Because the ssh environment is the parent of the gedit command, killing ssh will also kill the gedit window.
+
+
+ 
+
+ 
+ 
+B.	Mounting a USB flash drive:
+1.	Open a terminal, and make sure you have root privileges.
+2.	Inser t a USB flash drive in the USB port of your computer.
+3.	Use dmesg to find the device name of the USB flash drive. 
+4.	Use fdisk -cul /dev/sdb to find current partitions on the USB flash drive. 
+5.	Use mount /dev/sdb1 /mnt to mount the USB flash drive on the /mnt directory.
+6.	Use cd /mnt to go into the /mnt directory.
+7.	Type ls to verify that you see the contents of the USB flash drive.
+8.	Now use umount /dev/sdb1 to try to dismount the USB flash drive. 
+This won’t work because you still are in the /mnt directory. 
+You’ll see the “ device is busy” error message.
+9.	Use cd without any arguments. This takes your current shell out of the /mnt directory and 
+back to your home directory.
+10.	At this point, you’ll be able to dismount the USB fl ash drive successfully using umount /dev/sdb1.
+.
+ 
+C.	Creating Links
+1. Open a terminal, and make sure you have root permissions.
+2. Use the command ln -s /etc/hosts ~/symhosts. This creates a symbolic link with the name symhosts in your home directory.
+3. Use the command ln /etc/hosts ~/hardhosts. This creates a hard link with the name hardhosts in your home directory.
+4. Use the command echo 10.0.0.10 dummyhost >> /etc/hosts. Verify that you can see this addition in all three fi les: /etc/hosts, ~/symhosts, and ~/hardhosts.
+5. Use the command ls -il /etc/hosts ~/symhosts ~/hardhosts. The option –I shows the inode number. You can see that it is the same for /etc/hosts and ~/hardhosts, like all other proper ties of the file.
+6. Use rm /etc/hosts. Try to read the contents of ~/symhosts. What happens? Now try to access the contents of ~/hardhosts. Do you see the dif ference?
+7. Restore the original situation by re-creating the /etc/hosts fi le. You can do that easily by making a new hard link using ln ~/hardhosts /etc/hosts.
+

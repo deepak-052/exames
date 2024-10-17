@@ -1,7 +1,0 @@
-activity_1  ,   activity_2
-class_1    ,   class_2
-collaboration_1   ,   collaboration
-component_1   ,   component_2
-deployment_1  ,   deployment_2
-sequence_1a  ,  sequence_1b   ,   sequence_2
-usecase_1
